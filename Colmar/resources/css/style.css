@@ -1,0 +1,645 @@
+/**********************/
+/* Universal Code */
+/**********************/
+
+body {
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    color: #1D2731;
+}
+
+.container{
+    padding-left: 24px;
+}
+
+.container,
+article{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.highlight{
+    color: #C99E10;
+}
+
+@media only screen and (max-width: 801px){
+    .container{
+        padding: 0;
+        margin: 0 auto;
+    }
+}
+
+/* Links */
+a,
+.fa{
+  -webkit-transition: color 300ms linear;
+  transition: color 300ms linear;  
+}
+
+a:hover,
+a:active{
+    color: #328CC1;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h5 {
+    font-family: 'Oswald', serif;
+}
+
+h1{
+    font-size: 3.5rem;
+}
+
+h2{
+    font-size: 2.5rem;
+}
+
+h3{
+    font-size: 1.75rem;
+}
+
+h5{
+    font-size: .9rem;
+}
+
+@media only screen and (max-width: 801px){
+    h1{
+        font-size: 2.5rem;
+    }
+    
+    h2{
+        font-size: 2rem;
+    }
+    
+    h3{
+        font-size: 1.25rem;
+    }
+}
+
+/* Borders */
+
+.first{
+    border-bottom: 1px solid #1D2731;
+    border-top: none;
+}
+
+article,
+footer {
+    border-top: 1px solid #1D2731;
+}
+
+/*********************/
+/* Header Nav */
+/*********************/
+
+.banner{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 64px;
+    width: 100%;
+    border-bottom: 1px solid #1D2731;
+}
+
+.banner .container{
+    width: 100%;
+}
+
+.banner .container,
+footer .container{
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0 24px;
+    padding: 0;
+}
+
+.logo{
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+}
+
+.logo img,
+.logo h1 {
+    display: inline-block;
+}
+
+.logo h1 {
+    font-size: 1.75rem;
+    text-transform: uppercase;
+}
+
+.logo img{
+    margin: 0 auto;
+}
+
+nav span{
+    margin-right: 16px;
+}
+
+nav span:last-child{
+    margin: 0;
+}
+
+nav i{
+    margin-left: 5px;
+}
+
+.mobile-nav{
+    display: none;
+}
+
+@media only screen and (max-width: 801px){
+    
+    .banner{
+        position: fixed;
+        z-index: 20;
+        background: rgba(255, 255, 255, 0.9);
+    }
+    
+    .banner .container{
+        margin: 0 auto;
+        padding: 0;
+    }
+    
+    .logo {
+        display: none;
+    }
+    
+    .banner .desktop {
+        display: none;
+    }
+    
+    .mobile-nav{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        -ms-flex-line-pack: center;
+        align-content: center;
+        -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+        align-items: baseline;
+        width: 100%;
+    }
+}
+
+/**********************/
+/* Jumbotron */
+/**********************/
+
+.jumbotron,
+.learning,
+.articles article:last-child,
+.thesis aside article:first-child{
+    background-color: #0B3C5D;
+    color: #fff
+}
+
+.jumbotron .container img{
+    width: 60%;
+    height: auto;
+    margin: 32px 24px 32px 0;
+}
+
+.content {
+    width: 40%;
+    height: 200px;
+    padding-right: 48px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+.btn {
+    background: #C99E10;
+    padding: 8px 0;
+    margin: 0;
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transition: background 300ms linear;
+    transition: background 300ms linear;
+}
+
+.btn a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn:hover,
+.btn:active {
+    background: #328CC1;
+}
+
+@media only screen and (max-width: 801px){
+    .jumbotron{
+        padding-top: 64px;
+    }
+    
+    .jumbotron .container{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    
+    .jumbotron .container img{
+        width: 100%;
+        padding: 0;
+        margin: 0 auto;
+    }
+    
+    .content {
+        width: 90%;
+        height: auto;
+        padding: 32px 16px;
+        margin: 0 auto;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    
+    .content h1{
+        margin-bottom: 32px;
+    }
+    
+    .content p{
+        margin-bottom: 24px;
+    }
+    
+    .btn{
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+/******************************/
+/* Articles */
+/******************************/
+
+/* Main */
+
+.main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 60%;
+    border: 0px;
+}
+
+.main img,
+.main video{
+    width: 100%;
+    height: auto;
+    margin: 32px 0;
+}
+
+.main .text{
+    width: 100%;
+}
+
+.main .text h2,
+.main .text p {
+    margin-bottom: 24px;
+}
+
+.main .text h5,
+.thesis .main .text p{
+    margin-bottom: 32px;
+}
+
+/* Side */
+
+aside {
+    width: 40%;
+    border-left: 1px solid #1D2731;
+    margin-left: 24px;
+}
+
+.first {
+    margin-top: 32px;
+    border: 0px;
+}
+
+article img{
+    width: 35%;
+    height: auto;
+    display: inline-block;
+    margin: 16px;
+}
+
+article .mobile {
+        display: none !important;
+    }
+
+article .text {
+    width: 65%;
+}
+
+article .text h3,
+article .text p {
+    margin-bottom: 8px;
+}
+
+article:last-child{
+    margin-bottom: 32px;
+}
+
+@media only screen and (max-width: 801px){
+    .articles .main{
+        display: none;
+    }
+    
+    .articles aside{
+        border: 0px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 16px;
+    }
+    
+    .articles article{
+        border: 0px;
+    }
+    
+    .articles article:last-child{
+        background: #fff;
+        color: #1D2731;
+    }
+    
+    article{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    
+    article img{
+        width: 100%;
+        height: auto;
+        padding: 16px;
+    }
+    
+    article .text{
+        width: 100%;
+        padding-left: 32px;
+        margin-bottom: 64px;
+    }
+    
+    article .text:last-child{
+        margin-bottom: 32px;
+    }
+    
+    article .desktop {
+        display: none !important;
+    }
+    
+    article .mobile {
+        display: block !important;
+    }
+}
+
+/******************************/
+/* Learning */
+/******************************/
+
+.learning h2,
+.thesis h2{
+    text-align: center;
+}
+
+.learning h2{
+     padding-top: 32px;
+}
+
+.learning .container{
+    padding: 32px 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #fff;
+    margin: 32px 16px;
+    width: 25%;
+    overflow: hidden;
+    height: 350px;
+    color: #1D2731;
+}
+
+.card img{
+    height: auto;
+    width: 100%;
+}
+
+.card-text{
+    padding: 0 16px 24px 16px;
+}
+
+.card-text h3{
+    padding: 16px 0;
+}
+
+.card-text p{
+    padding: 8px 0;
+}
+
+@media only screen and (max-width: 801px){
+    
+    .learning h2,
+    .thesis h2{
+        padding: 32px 0 16px 0;
+    }
+    
+    .learning .container{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    
+    .card img,
+    .card p{
+        display: none;
+    }
+    
+    .card{
+        width: 90%;
+        height: auto;
+        padding: 16px 16px 24px 16px;
+        margin: 8px 0;
+    }
+    
+    .card-text{
+        padding: 0;
+        margin: 0 auto;
+    }
+    
+    .card:first-child{
+        margin-top: 0;
+    }
+    
+    .card:last-child{
+        margin-bottom: 32px;
+    }
+}
+
+/******************************/
+/* Thesis */
+/******************************/
+
+.thesis h2{
+     padding: 32px 0;
+}
+
+.thesis .container{
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.thesis aside,
+.thesis article{
+    border: none;
+}
+
+.thesis aside{
+    padding-top: 32px;
+}
+
+.thesis .main h3{
+    margin-bottom: 8px;
+}
+
+.thesis article:last-child{
+    background: #fff;
+}
+
+@media only screen and (max-width: 801px){
+    
+    .thesis aside{
+        display: none;
+    }
+    .thesis .main{
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0 auto;
+    }
+    
+    .thesis .main .text{
+        display: none;
+    }
+    
+    .main video{
+        margin: 0 auto 24px auto;
+    }
+}
+
+/******************************/
+/* Footer */
+/******************************/
+
+footer{
+    font-size: 90%;
+    background-color: #1D2731;
+    color: #fff;
+}
+
+footer a{
+    color: #fff;
+}
+
+footer .container{
+    padding: 16px 0 32px;
+}
+
+footer span,
+footer i{
+    padding: 0 8px;
+}
+
+.fa-facebook:hover,
+.fa-facebook:active{
+    color: #3b5998;
+}
+
+.fa-twitter:hover,
+.fa-twitter:active{
+    color: #55acee;
+}
+
+.fa-google-plus:hover,
+.fa-google-plus:active{
+    color: #dd4b39;
+}
+
+@media only screen and (max-width: 801px){
+    footer .container{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    } 
+    
+    footer p{
+        padding: 16px 0;
+    }
+    
+    footer span{
+        display: none;
+    }
+    
+}
